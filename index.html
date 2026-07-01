@@ -430,7 +430,12 @@
     }
 
     /* Custom popup */
-    .cpopup { width: 280px; font-family: 'DM Sans', sans-serif; }
+    .cpopup {
+    width: 280px;
+    max-height: 70vh;
+    overflow-y: auto;
+    font-family: 'DM Sans', sans-serif;
+    }
     .cpopup-head {
       background: var(--ink);
       padding: 1rem 1.1rem 0.85rem;
@@ -928,10 +933,10 @@ const smkList = [
     nama: "SMK Negeri 8 Jakarta",
     lat: -6.21546601393165,
     lng: 106.8465324360344,
-    deskripsi: "Berprestasi, Berkarakter, Siap Kerja",
+    deskripsi: "SMK Negeri 8 Jakarta atau singkatnya SMKN 8 Jakarta adalah salah satu sekolah menengah kejuruan di Pejaten Barat, Pasar Minggu, Jakarta Selatan, Daerah Khusus Ibukota Jakarta. SMK Negeri 8 Jakarta awalnya berdiri dengan nama SMEA Negeri 4 Jakarta. SMEA Negeri 4 Jakarta adalah sekolah afiliasi dari SMEA Negeri 3 Jakarta yang dahulu berlokasi di Jl. Prof. Dr. Joko Sutono, SH, Kebayoran Baru, Jakarta Selatan.",
     pendaftar: 1450,
     nilaiUAS: 89.5,
-    alamat: "Jl. Cipete Dalam II No. 9, Cilandak, Jakarta Selatan",
+    alamat: "Jl. Pejaten Raya, RT.6/RW.6, Pejaten Bar., Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510",
     fotoUrl: "img/smkn8.jpg"
   },
   {
@@ -940,10 +945,10 @@ const smkList = [
     nama: "SMK Negeri 29 Jakarta",
     lat: -6.239784899999985,
     lng: 106.80780720000003,
-    deskripsi: "Teknologi Informasi dan Komunikasi Unggulan",
+    deskripsi: "SMKN Negeri 29 Jakarta didirikan di ruang hanggar Pesawat Udara Kemayoran Jakarta pada bulan Agustus 1954, dikenal dengan STM Penerbangan, dipindahkan lokasinya ke Jln Prof Joko Sutono SH No.1 Kebayoran Baru sejak tahun 1958 berdiri di atas luas tanah 20980 m², merupakan satu-satunya SMK Negeri Kelompok Teknologi Industri Udara yang berada di Wilayah Segitiga Emas Jakarta Selatan, dengan spesialisasi Teknologi Pesawat Udara satu-satunya di DKI Jakarta memiliki potensi dan peluang yang sangat besar untuk ditingkatkan dan dikembangkan.",
     pendaftar: 1200,
     nilaiUAS: 87.0,
-    alamat: "Jl. Raya Ciracas No.15, Ciracas, Jakarta Timur",
+    alamat: "Jl. Prof. Joko Sutono SH No.1, RT.15/RW.6, Petogogan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12170",
     fotoUrl: "img/smkn29.jpeg"
   },
   {
@@ -952,10 +957,10 @@ const smkList = [
     nama: "SMK Negeri 6 Jakarta",
     lat: -6.24276146112783,
     lng: 106.80486727441021,
-    deskripsi: "Kompeten, Profesional, Berwawasan Lingkungan",
+    deskripsi: "SMK Negeri 6 Jakarta (sering disingkat SMKN 6 Jakarta) adalah sebuah sekolah menengah kejuruan negeri unggulan yang terletak di kawasan strategis Kebayoran Baru, Jakarta Selatan. Berdiri sejak tahun 1959 (awalnya dikenal sebagai SMEA 4 Jakarta), sekolah ini memegang Akreditasi A dan berfokus pada pengembangan kompetensi siswa di bidang bisnis, manajemen, seni, serta teknologi digital guna mencetak lulusan yang siap kerja, berwirausaha, atau melanjutkan studi.",
     pendaftar: 1300,
     nilaiUAS: 88.0,
-    alamat: "Jl. Prof. Dr. Latumeten No.8, Jelambar Baru, Grogol Petamburan, Jakarta Barat",
+    alamat: "Jl. Prof. Joko Sutono S.H. No. 2A, RT 1/RW 2, Kel. Melawai, Kec. Kebayoran Baru, Kota Jakarta Selatan, DKI Jakarta 12160",
     fotoUrl: "img/smkn6.jpg"
 
   },
@@ -965,10 +970,10 @@ const smkList = [
     nama: "SMK Cyber Media",
     lat: -6.252773747352548,
     lng: 106.83502707200557,
-    deskripsi: "Cyber Creative, Media Digital Masa Depan",
+    deskripsi: "SMK Cyber Media adalah sebuah lembaga pendidikan kejuruan swasta yang berlokasi di Pancoran, Jakarta Selatan. Didirikan pada tahun 2007 di bawah naungan Yayasan Kaum Ibu Kebayoran, sekolah ini memiliki Akreditasi A dan berkomitmen mencetak lulusan yang cerdas, kreatif, serta inovatif di bidang teknologi informasi dan komunikasi digital agar mampu bersaing secara global",
     pendaftar: 1100,
     nilaiUAS: 86.5,
-    alamat: "Jl. Kemandoran Raya No.46, Pesanggrahan, Jakarta Selatan",
+    alamat: "Jl. Duren Tiga No. 12, RT 8/RW 1, Kel. Pancoran, Kec. Pancoran, Kota Jakarta Selatan, DKI Jakarta 12780",
     fotoUrl: "img/smkscyber.jpg"
   },
   {
@@ -977,22 +982,22 @@ const smkList = [
     nama: "SMK 3 Perguruan Cikini",
     lat: -6.353066562152065,
     lng: 106.8122244744118,
-    deskripsi: "Mendidik dengan Hati, Meraih Prestasi",
+    deskripsi: "SMK 3 Perguruan Cikini (sering disebut SMK 3 Percik) adalah sebuah lembaga pendidikan kejuruan swasta yang berlokasi di Jagakarsa, Jakarta Selatan. Berada di bawah naungan Yayasan Perguruan Cikini, sekolah ini didirikan sejak tahun 2012 dan saat ini telah memegang Akreditasi A. Sekolah ini dikenal fokus mencetak lulusan terampil yang siap kerja di sektor industri teknologi, bisnis, hingga kesehatan.",
     pendaftar: 950,
     nilaiUAS: 84.0,
-    alamat: "Jl. Raden Saleh No.27-29, Cikini, Menteng, Jakarta Pusat",
-    fotoUrl: "img/smks3ciki.jpg"
+    alamat: "Jl. Srengseng Sawah No. 79, RT 13/RW 9, Kel. Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, DKI Jakarta 12640",
+    fotoUrl: "img/smks3ciki.jpeg"
   },
   {
     id: 6,
     jenis: "swasta",
-    nama: "SMK Bunda Kandung",
+    nama: " ",
     lat: -6.289573861560071,
     lng: 106.8393606744109,
-    deskripsi: "Bunda Kandung, Lahirkan Generasi Unggul",
+    deskripsi: "SMK Bunda Kandung adalah sebuah sekolah menengah kejuruan swasta yang terletak di Pasar Minggu, Jakarta Selatan. Berdiri sejak tahun 1964, sekolah ini merupakan salah satu SMK legendaris di Jakarta Selatan yang saat ini memegang Akreditasi A. Sekolah ini menerapkan kombinasi pendidikan karakter, nilai keimanan, serta pemanfaatan teknologi modern melalui Kurikulum Merdeka.",
     pendaftar: 900,
     nilaiUAS: 83.5,
-    alamat: "Jl. Raya Bogor No.53, Ciracas, Jakarta Timur",
+    alamat: " Jl. Palapa Raya No. 3, Kel. Pasar Minggu, Kec. Pasar Minggu, Kota Jakarta Selatan, DKI Jakarta 12520",
     fotoUrl: "img/smksbunda.jpg"
   },
   {
@@ -1001,11 +1006,11 @@ const smkList = [
     nama: "SMK Pembangunan Jaya YAKAPI (PJ)",
     lat: -6.289102061555744,
     lng: 106.83948487441096,
-    deskripsi: "Membangun Karakter, Membangun Negeri",
+    deskripsi: "SMK Pembangunan Jaya YAKAPI adalah sebuah lembaga pendidikan kejuruan swasta yang berlokasi di Pasar Minggu, Jakarta Selatan. Sekolah ini berada di bawah naungan Yayasan Akademi Administrasi Pembangunan Indonesia (YAKAPI) dan memiliki Akreditasi A. Dengan mengusung moto Bring you to the future, sekolah ini berfokus untuk mencetak lulusan yang berkarakter unggul, kompeten, serta memiliki jiwa wirausaha.",
     pendaftar: 1000,
     nilaiUAS: 85.0,
-    alamat: "Jl. Warung Jati Barat No.48, Jati Padang, Ps. Minggu, Jakarta Selatan",
-    fotoUrl: "img/smkspj.jpg"
+    alamat: "Jl. Palapa Raya No. 2, Kel. Pasar Minggu, Kec. Pasar Minggu, Kota Jakarta Selatan, DKI Jakarta 12520",
+    fotoUrl: "img/smkykp.jpeg"
   },
   {
     id: 8,
@@ -1013,10 +1018,10 @@ const smkList = [
     nama: "SMK Al-Kautsar",
     lat: -6.252627661218639,
     lng: 106.7933883744104,
-    deskripsi: "Berilmu, Beramal, Berakhlak Mulia",
+    deskripsi: "SMKS Al Kautsar (sering dikenal sebagai SMK Al Kautsar Muhammadiyah) adalah sekolah menengah kejuruan swasta dengan akreditasi A. Terletak di Kebayoran Baru, Jakarta Selatan.",
     pendaftar: 880,
     nilaiUAS: 82.5,
-    alamat: "Jl. Raya Bogor KM 24, Kelapa Dua Wetan, Ciracas, Jakarta Timur",
+    alamat: "Jl. Jemb. Sel. No.6 1, RT.1/RW.5, Pulo, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160",
   fotoUrl: "img/smksalk.jpg"
   }
 ];
@@ -1239,19 +1244,22 @@ L.marker([-6.268, 106.800], {
       font-family:'DM Sans',sans-serif;
       font-size:11px;
       font-weight:600;
-      align-items: center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
       color:#1a56db;
       letter-spacing:0.06em;
       text-transform:uppercase;
       background:rgba(255,255,255,0.88);
-      padding:3px 90px;
+      padding:6px 70px;
       border-radius:20px;
       border:1px solid #c3d1f9;
       white-space:nowrap;
       box-shadow:0 1px 4px rgba(0,0,0,0.08);
       backdrop-filter:blur(4px);
-    "><p>Jakarta Selatan</p></div>`,
-    iconAnchor: [60, 10]
+      text-align:center;
+    ">Jakarta Selatan</div>`,
+    iconAnchor: [60, 18]
   })
 }).addTo(map);
 
@@ -1285,10 +1293,18 @@ smkRanked.forEach((smk, idx) => {
     `,
     iconSize: [52, 64],
     iconAnchor: [26, 64],
-    popupAnchor: [0, -68]
+    popupAnchor: [0, -20]
   });
 
-  const popup = L.popup({ maxWidth: 300, minWidth: 280, className: '' }).setContent(`
+  const popup = L.popup({
+  maxWidth: 280,
+  minWidth: 280,
+  maxHeight: window.innerHeight * 0.7,
+  autoPan: true,
+  autoPanPadding: [20, 80],
+  keepInView: true,
+  className: ''
+  }).setContent(`
     <div class="cpopup">
       <div class="cpopup-head">
         <div class="cpopup-eyebrow">Peringkat #${idx + 1} &nbsp;·&nbsp; SMK ${smk.jenis.charAt(0).toUpperCase() + smk.jenis.slice(1)}</div>
@@ -1302,7 +1318,6 @@ smkRanked.forEach((smk, idx) => {
           </svg>
           ${smk.alamat}
         </div>
-        //
         <p class="cpopup-desc">${smk.deskripsi}</p>
         
         ${smk.fotoUrl
