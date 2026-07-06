@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>SIG — SMK Favorit Jakarta Selatan 2026</title>
-
+  <title>SchoolMap | SMK Favorit Jakarta Selatan 2026</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -60,6 +60,25 @@
     /* ============================================================
        3. TOPBAR
        ============================================================ */
+    .topbar-dot {
+  width: 36px;
+  height: 36px;
+  background: var(--accent-lt);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.logo {
+  width: 20px;
+  height: 20px;
+  background-image: url(img/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+}
+ 
     .topbar {
       background: var(--ink);
       border-bottom: none;
@@ -82,17 +101,7 @@
       min-width: 0;
     }
 
-    .topbar-dot {
-      width: 36px;
-      height: 36px;
-      background: var(--accent);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .topbar-dot svg { width: 18px; height: 18px; fill: #fff; }
+
 
     .topbar-text { min-width: 0; }
 
@@ -821,13 +830,11 @@
 <header class="topbar">
   <a class="topbar-brand" href="#">
     <div class="topbar-dot">
-      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="10" cy="10" r="3" />
-        <path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 1.5a6.5 6.5 0 110 13 6.5 6.5 0 010-13z" fill-rule="evenodd" />
-      </svg>
+      <div class="logo">
+      </div>
     </div>
     <div>
-      <div class="topbar-title">SIG Jakarta Selatan</div>
+      <div class="topbar-title">SchoolMap 8 SMK <br> Jakarta Selatan</div>
       <div class="topbar-sub">Sistem Informasi Geografis</div>
     </div>
   </a>
