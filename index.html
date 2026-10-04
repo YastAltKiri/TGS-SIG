@@ -1213,11 +1213,8 @@ const map = L.map('map', { zoomControl: false }).setView([-6.265, 106.815], 12);
 
 L.control.zoom({ position: 'topright' }).addTo(map);
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  subdomains: 'abcd',
-  maxZoom: 19,
-  minZoom: 10
+L.tileLayer('https://api.maptiler.com/maps/dataviz-light/{z}/{x}/{y}.png?key=API_KEY_KAMU', {
+  attribution: '&copy; MapTiler &copy; OpenStreetMap contributors'
 }).addTo(map);
 
 /* ============================================================
