@@ -1213,8 +1213,9 @@ const map = L.map('map', { zoomControl: false }).setView([-6.265, 106.815], 12);
 
 L.control.zoom({ position: 'topright' }).addTo(map);
 
-L.tileLayer('https://api.maptiler.com/maps/dataviz-light/{z}/{x}/{y}.png?key=API_KEY_KAMU', {
-  attribution: '&copy; MapTiler &copy; OpenStreetMap contributors'
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
 /* ============================================================
